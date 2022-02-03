@@ -22,7 +22,7 @@ public class Main {
         //auto-unboxing
         //int result=x;
 
-        Beer myBeer= new Beer();
+        /*Beer myBeer= new Beer();
         String[] str = UUID.randomUUID().toString().split("-");
         myBeer.setBeerId(str[3]);
         System.out.println("Enter beer name: ");
@@ -34,6 +34,10 @@ public class Main {
         System.out.println("Enter Stock: ");
         int stock = s.nextInt();
         myBeer.setUnitInStock(stock);
-        System.out.println(myBeer);
+        System.out.println(myBeer);*/
+        Beer myBeer = new Beer();
+        System.out.println(Beer.getCount());
+        Beer myBeer1 = new Beer();
+        System.out.println(Beer.getCount());
     }
 }

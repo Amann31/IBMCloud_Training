@@ -5,8 +5,10 @@ public class Beer {
     private String beerName;
     private Double costPerUnit;
     private Integer unitInStock;
+    private static Integer count=0;
 
     public Beer() {
+        count++;
     }
 
     public Beer(String beerId, String beerName, Double costPerUnit, Integer unitInStock) {
@@ -55,4 +57,9 @@ public class Beer {
                 "costPerUnit= " + costPerUnit +
                 " unitInStock= " + unitInStock;
     }
+
+    public static Integer getCount() {
+        return count;
+    }
 }
+
