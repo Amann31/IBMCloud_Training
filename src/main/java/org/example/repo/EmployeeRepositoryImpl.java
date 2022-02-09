@@ -1,12 +1,15 @@
 package org.example.repo;
 
 import org.example.model.Employee;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+@Component("employeeRepository")
 
 public class EmployeeRepositoryImpl implements EmployeeRepository{
     private final DataSource dataSource;

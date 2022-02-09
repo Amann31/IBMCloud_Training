@@ -2,10 +2,12 @@ package org.example.service;
 
 import org.example.model.Employee;
 import org.example.repo.EmployeeRepository;
+import org.springframework.stereotype.Component;
 
 import java.sql.SQLException;
 import java.util.List;
 
+@Component("employeeService")
 public class EmployeeServiceImpl implements EmployeeService{
     private EmployeeRepository employeeRepository;
 
