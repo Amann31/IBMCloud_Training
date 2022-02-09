@@ -32,8 +32,8 @@ public class tester {
         do {
             System.out.println("1. Create Employee. \t");
             System.out.println("2. Update Employee. \t");
-            System.out.println("3. Delete Employee. \t");
-            System.out.println("4. Find by Employee ID. \t");
+            System.out.println("3. Find by Employee ID. \t");
+            System.out.println("0. Exit.");
             System.out.println("Enter your choice: ");
             try
             {
@@ -56,12 +56,18 @@ public class tester {
                         employee=employeeService.updateEmployee(id2);
                         System.out.println("Details Updated successfully."+ employee);
                         break;
-                    case 4:
+                    case 3:
                         System.out.println("Enter ID: ");
                         int id= Integer.parseInt(bufferedReader.readLine());
                         employee=employeeService.findEmployeeById(id);
                         System.out.println("Employee found with details: "+employee);
                         break;
+                    case 0:
+                        System.out.println("Bye.");
+                        System.exit(0);
+                    default:
+                        System.out.println("Invalid choice.");
+
                 }
             }
             catch (Exception e)
