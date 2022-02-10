@@ -18,8 +18,12 @@ public class Customer {
     private Integer customerId;
     @Column(name = "customer_name")
     private String customerName;
+    @Column(name = "email")
+    private String email;
 
-    public Customer(String customerName) {
+    public Customer(String customerName, String email) {
         this.customerName = customerName;
+        this.email = email;
     }
+
 }
